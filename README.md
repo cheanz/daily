@@ -13,7 +13,11 @@
  check wifi:1.hardware module shape 方形贴片 环绕式焊点 以及天线接口 2.$ ip a 找wen 没有的话就是不支持  
  
  首先要检查network 没有 wifi device就用 Ethernet网线
- 然后 sudo apt update && sudo apt upgrade(update 只是 找到最新版本 没有进行下载和安装）
+ 然后 sudo apt update && sudo apt upgrade(update 只是 找到最新版本 没有进行下载和安装）  
+   
+  ***
+    
+   
 ### to learn
 $ ping）
 message "w:" "E:"
