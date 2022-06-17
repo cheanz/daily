@@ -7,4 +7,5 @@
  user mode super user mode switching
  >https://www.cnblogs.com/oddcat/articles/9679606.html
 ### to learn
-$ ping
+$ ping  
+message "w:" "E:"
