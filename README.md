@@ -20,4 +20,5 @@
    
 ### to learn
 $ ping）
-message "w:" "E:"
+message "w:" "E:"  
+explicitly set
