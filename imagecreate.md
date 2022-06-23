@@ -15,4 +15,9 @@ comment: 将$UID修改为USERNAME
 <img width="248" alt="image" src="https://user-images.githubusercontent.com/107660838/175290410-543cdc1e-4363-48f5-b74b-37627778099f.png">
 隐藏文件夹
 
+<img width="552" alt="image" src="https://user-images.githubusercontent.com/107660838/175291432-0e805aed-de48-4969-a8c3-61dbd7818f5e.png">
+绿色的是 executable file exe文件啊！！！
+
+<img width="266" alt="image" src="https://user-images.githubusercontent.com/107660838/175292665-deccf4da-69cb-42a3-b01e-25660db216a3.png">
+very useful
 
