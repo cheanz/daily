@@ -23,3 +23,9 @@ very useful
 
 <img width="671" alt="image" src="https://user-images.githubusercontent.com/107660838/175293369-25bb89a5-c4b1-4a23-a4fc-9474b4f1dbca.png">
 ？？明日再议
+warning是正常现象因为在docker里面生成镜像
+bootstrap卡住可以ctrl+c 激活一下
+
+# make.log
+`$make 2>&1|tee xxx.log`，“0”表示标准输入，“1”表示标准输出，“2”表示标准出错信息输出。2>&1表示把2设备的信息重定向到1设 备；“|”是管道符号，把标准输出的信息直接传递给后面的命令；tee是创建文件并保存信息的工具；xxx.log是文件名
+<img width="515" alt="image" src="https://user-images.githubusercontent.com/59786755/175455396-082a954c-e5dd-475d-a6b9-51fb30bfa974.png">
