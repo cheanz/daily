@@ -23,3 +23,7 @@ very useful
 
 <img width="671" alt="image" src="https://user-images.githubusercontent.com/107660838/175293369-25bb89a5-c4b1-4a23-a4fc-9474b4f1dbca.png">
 ？？明日再议
+
+```sudo /etc/init.d/xrdp start
+    ip a
+```
