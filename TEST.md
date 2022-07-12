@@ -13,3 +13,8 @@ sudo apt autoclean &&  sudo apt autoremove
 ```
 apt uninstall overlayroot 
 ```
+## chmod -x filename  
+r-- 100 4
+-w-  10 2
+--x   1 1
+rwx 111 7
