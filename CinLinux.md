@@ -27,3 +27,5 @@
 * fopen(filename,r/w/a)  r(require already exist) w(if not existed, create;if existed, destroy) a(if not existed, create;if existed, append)
    'r+''w+''a+' both read and write
  * fclose(stream) 0 on seccuss and EOF on error
+## main  
+argv[0] is the './a.out' itself
