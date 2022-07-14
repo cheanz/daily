@@ -15,13 +15,13 @@
  并配有简单外设如键盘和显示器,通常在PCB上固化有ROM或者EPROM的小规模监控程序.   
  单片机(SBC;SCP（singlle-chip-unit）;MCU(mircro-control-unit)： IC（大规模集成电路出现），CPU、串口、da、时钟等功能模块集成在一块芯片中。
  ## metadata
- `stat' 
+ `stat`
  ![image](https://user-images.githubusercontent.com/59786755/178883660-5cd9eb15-d8e7-458c-915b-e02dcb89a93c.png)
 ## inode
-`ls-i'
-![image](https://user-images.githubusercontent.com/59786755/178885156-cbb2e7ca-71ed-4330-add6-1200f6e39a10.png)
+`ls-i`
+![image](https://user-images.githubusercontent.com/59786755/178885156-cbb2e7ca-71ed-4330-add6-1200f6e39a10.png)  
+264398 means the inode id.
  
-
  ***
  # connector 
  PS/2(personal system/2)：全键防冲突 N-key roollover ；稳定性好；Actively *INTERRUPT" the system,less latency.缺点:不能用driver；不能点RGB;easy to break not support hot plug;
