@@ -28,4 +28,10 @@
    'r+''w+''a+' both read and write
  * fclose(stream) 0 on seccuss and EOF on error
 ## main  
-argv[0] is the './a.out' itself
+argv[0] is the './a.out' itself, so argc can be 1 at least.
+## read and write
+getc(EOF is returned in the end) putc process one character at a time.
+fgets(pointer to a character buffer, integer specifying the size of the buffer,fp referring to a stream open for reading) returns a pointer to the filled buffer or NULL
+fputs
+
+
