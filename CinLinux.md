@@ -33,5 +33,9 @@ argv[0] is the './a.out' itself, so argc can be 1 at least.
 getc(EOF is returned in the end) putc process one character at a time.
 fgets(pointer to a character buffer, integer specifying the size of the buffer,fp referring to a stream open for reading) returns a pointer to the filled buffer or NULL
 fputs
-
+# difference between initialization and assignment  
+LHS: left hand side
+array type cant be assigned
+__restrict  
+？优化等级
 
