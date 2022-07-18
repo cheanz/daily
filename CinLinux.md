@@ -33,9 +33,19 @@ argv[0] is the './a.out' itself, so argc can be 1 at least.
 getc(EOF is returned in the end) putc process one character at a time.
 fgets(pointer to a character buffer, integer specifying the size of the buffer,fp referring to a stream open for reading) returns a pointer to the filled buffer or NULL
 fputs
+***  
 # difference between initialization and assignment  
 LHS: left hand side
 array type cant be assigned
 __restrict  
 ？优化等级
+# Escape sequences
+In C, all escape sequences consist of two or more characters, the first of which is the backslash, \ (called the "Escape character"); the remaining characters determine the interpretation of the escape sequence. For example, \n is an escape sequence that denotes a newline character.
+# in Unix and linux \n is the code for end-of-line
+***  
+#bugs
+![Screenshot from 2022-07-18 14-34-22](https://user-images.githubusercontent.com/59786755/179456280-45262c2c-6c57-47c6-b819-8796d4736032.png)
+
+![Screenshot from 2022-07-18 14-36-06](https://user-images.githubusercontent.com/59786755/179456400-e929ecc1-1787-4c72-a90d-b93cef086a88.png)
+When compile escape.c, there is no main funciton though I wrote it in escape.c, whcih can be confirmed in escape.i. The reason is, in this folder, there are other files containing main functions.
 
