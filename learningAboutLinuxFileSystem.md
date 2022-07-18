@@ -35,5 +35,6 @@
 ```
  sudo apt -f install
  ```
- ## 
+ ## remenber to repeat sudo apt install package.deb after `--fix-broken install"
+![image](https://user-images.githubusercontent.com/59786755/179462048-4cd3e4b2-b15d-4340-884a-e15826c2b50d.png)
 
