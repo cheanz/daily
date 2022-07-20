@@ -62,4 +62,26 @@ except subprocess.CalledProcessError, exc:
 
 ```
 ## What's the difference？
+res print出来不同
+## __file__  
+
+os.path.dirname(__file__)  
+其实就是当前脚本运行的路径。
+
+但是也会分不同的情况。
+
+如果执行命令时使用绝对路径，__file__就是脚本的绝对路径。
+
+如果使用的是相对路径，__file__就是脚本的相对路径。
+
+注：
+
+如果在交互式环境中，则会爆出异常。因为此时__file__并未生成。
+
+
+
+
+
+
+
 
