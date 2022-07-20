@@ -18,3 +18,48 @@ print(out)//foo
 out = os.path.dirname("/baz/foo")
 print(out)//'/baz'
 ```
+## subprocess
+subprocess模块用来创建新的进程，连接到其stdin、stdout、stderr管道并获取它们的返回码。subprocess模块的出现是为了替代如下旧模块及函数：os.system、os.spawn*、os.popen*、popen2.*、commands.*。强烈建议POSIX用户（Linux、BSD等）安装并使用较新的subprocess32模块，而不是Python 2.7自带的subprocess。
+Windows NT
+POSIX：一种标准，仿照早期unix系统界面建立，与linux兼容
+  完成同一功能，不同内核提供的系统调用（也就是一个函数）是不同的，例如创建进程，linux下是fork函数，windows下是creatprocess函数。好，我现在在linux下写一个程序，用到fork函数，那么这个程序该怎么往windows上移植？我需要把源代码里的fork通通改成creatprocess，然后重新编译...
+
+  posix标准的出现就是为了解决这个问题。linux和windows都要实现基本的posix标准，linux把fork函数封装成posix_fork（随便说的），windows把creatprocess函数也封装成posix_fork，都声明在unistd.h里。这样，程序员编写普通应用时候，只用包含unistd.h，调用posix_fork函数，程序就在源代码级别可移植了
+程序员只管API kernel只管系统调用
+
+
+*注意：不要为stdout和stderr参数赋值为subprocess.PIPE*   
+
+### call  
+subprocess.call(args, *, stdin= None, stdout = None, stderr = None, shell = False)
+运行由args参数提供的命令，等待命令执行结束并返回返回码。args参数由字符串形式提供且有多个命令参数时，需要提供shell=True参数
+### check_call
+subprocess.check_call(args, *, stdin = None, stdout = None, stderr = None, shell = False)
+与call方法类似，不同在于如果命令行执行成功，check_call返回返回码0，否则抛出subprocess.CalledProcessError异常。
+subprocess.CalledProcessError异常包括returncode、cmd、output等属性，其中returncode是子进程的退出码，cmd是子进程的执行命令，output为None。
+### check_output
+
+subprocess.check_output(args, *, stdin = None, stderr = None, shell = False, universal_newlines = False)
+在子进程执行命令，以字符串形式返回执行结果的输出。如果子进程退出码不是0，抛出subprocess.CalledProcessError异常，异常的output字段包含错误输出：
+```
+import subprocess
+try:
+    res = subprocess.check_call(['ls', '('])
+    print  'res:', res
+except subprocess.CalledProcessError, exc:
+    print 'returncode:', exc.returncode
+    print 'cmd:', exc.cmd
+    print 'output:', exc.output
+    try:
+    res = subprocess.check_output('ls xxx',
+                    stderr = subprocess.STDOUT,
+                    shell = True)
+    print  'res:', res
+except subprocess.CalledProcessError, exc:
+    print 'returncode:', exc.returncode
+    print 'cmd:', exc.cmd
+    print 'output:', exc.output
+
+```
+## What's the difference？
+
