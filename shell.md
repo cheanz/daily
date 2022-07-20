@@ -78,9 +78,14 @@ os.path.dirname(__file__)
 
 如果在交互式环境中，则会爆出异常。因为此时__file__并未生成。
 
-
-
-
+```
+#为 bytes() 方法指定字符集
+b4 = bytes('C语言中文网8岁了', encoding='UTF-8')
+print("b4: ", b4)
+#通过 encode() 方法将字符串转换成 bytes
+b5 = "C语言中文网8岁了".encode('UTF-8')
+print("b5: ", b5)
+```
 
 
 
