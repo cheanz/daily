@@ -6,3 +6,7 @@ how to mount it?
 ```
 cat /proc/cmdline # may be intermediate root filesystem
 ```
+# dtname  
+
+device tree
+# cat?will delete file content?
