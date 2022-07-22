@@ -86,6 +86,17 @@ print("b4: ", b4)
 b5 = "C语言中文网8岁了".encode('UTF-8')
 print("b5: ", b5)
 ```
+# shift  
+shift parameter poistion
+```
+$1,$2,
+shift;shift;
+```  
+![Screenshot from 2022-07-22 10-00-13](https://user-images.githubusercontent.com/59786755/180346510-2762d795-0787-40d5-bb42-7685e815a3ea.png)  
+
+but it cant shift $@
+
+
 
 
 
