@@ -8,36 +8,43 @@ git checkout -b newbranchname upstaream/main
 * withdraw a modification if there is no stash  
 
 git checkout [--] <paths>
-* restore commit stage
+* restore commit stage  
 git checkout [commit id] [--] <paths>
 
 
 # rebase and merge
-main m1 m2 m3
+main m1 m2 m3  
 feature m2 f1 f2
-# commits 区别
-# command 
+# commits 和 command 上的区分
 ```git
 git merge feature
 ```
 在main上merge分支feature
 
 得到
-main：m1 m2 m3 mergecommit
+main：m1 m2 m3 mergecommit   
+  
 feature: 应该不变
 
 ```git
 git rebase main
 ```
-在feature 上 rebase main
-得到  m1 m2 m3 f1 f2
+在feature 上 rebase main  
+得到  m1 m2 m3 f1 f2  
 stash
 ## rabase 
 ```git
 git rebase -i HEAD~某个整数
 ```
-pick
-squash
+pick  
+squash  
+  
 此时 squash的commit 会与前一个合二为一
 
 rebase成功后记得push保证上下游的commits一致  
+  
+# stash
+  git stash
+  储存更改 回到最后一次一次commit后的状态
+  git stash apply 
+  
