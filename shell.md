@@ -124,7 +124,11 @@ man 8 shutdown
 ```
 `echo $PATH`  
 Check your search path. (personal bin or current positions shouldnt be in the first place of $PATH)
-# bash -c
+# bash -c!  
+
+![image](https://user-images.githubusercontent.com/59786755/182543158-09bc9b39-a36d-49f8-b7d4-c673149eefb2.png)
+
+
 -c means command
 $0 is always the filename.sh itself. $@ or $* represents from $1,$2......
 ```
