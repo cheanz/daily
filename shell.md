@@ -114,5 +114,24 @@ echo "Hello $USER_NAME"
 echo "I will create you a file called ${USER_NAME}_file"
 touch "${USER_NAME}_file"
 
-
-
+# which, whereis and whatis  
+which: show file-system location; report on your aliases;
+whereis: shwo file-system location; manual pages location;
+whatis: brief descriptions of command with man page index
+```bash
+man 3p shutdown
+man 8 shutdown
+```
+`echo $PATH`  
+Check your search path. (personal bin or current positions shouldnt be in the first place of $PATH)
+# bash -c
+-c means command
+$0 is always the filename.sh itself. $@ or $* represents from $1,$2......
+```
+bash -c "echo '$0 is $0, $1 is $1, $2 is $2'" foo bar bi
+bash -c 'echo "$0 is $0, $1 is $1, $2 is $2"' foo bar biz
+```
+```
+echo $PATH
+echo $shell
+```
