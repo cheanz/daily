@@ -47,4 +47,7 @@ rebase成功后记得push保证上下游的commits一致
   git stash
   储存更改 回到最后一次一次commit后的状态
   git stash apply 
-  
+``` 
+  git push -f origin HEAD^:master
+```
+  this will withdraw a push to the origin
