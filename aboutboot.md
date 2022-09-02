@@ -29,7 +29,19 @@ call means： the following process will return to the previous process
 ***
 AMD integrate memory controller into cpu which is used to be external north bridge.
 ##  U-boot: secondstage bootloader (SSBL)
+# packaging
+DIP : dual in line
 # Partition table
 LBA defalt size: 512 bytes 
 GPT disk : disk using GUID partition table
 MBR: master boot record . stored on the first zone on the disk; fixed size
+hard disk
+RAM: volatile: lose everything once power is removed.common type: Double data rate synchrounous dynamic random access memory: DDRSDRAM
+  DRAM: 1970s; Not regulated by clcok; asynchronous;
+  SDRAM:sychronous; rely on clock to sychronize signals; transfer data on one edge of clock
+  DDR: fetchdata both on leading edge and falling edge. From SDRAM to DDR SDRAM ...DDR2 SDRAM until DDR4 SDRAM, the operating voltage is lower while amount of data trasffered(words per clock cycle) is larger.
+SSD: use flash memory
+SD card 
+USB
+ddr memory
+ramdisk
