@@ -24,8 +24,8 @@ BIOS: motherboard firmware. 1.CHECK ALL the device are placed well.2. search for
 As a rsult UEFI occurs: Unified extensible firmware interface
 kernel: using Boot Arfs, Kernel locates and mounts the root filesytem; run init process(PID 0) to start userspace ; 
 SPL: secondary program loader. initialize DRAM and flash and usher u-boot.CONFIG_SPL_XXX
-pc: BIOS ->MBR ->GRUB -> kernel
-embeded system:Rom code –> SPL –> u-boot –> Linux kernel –> file system –> application
+pc: BIOS ->MBR ->GRUB -> kernel  
+embeded system:Rom code –> SPL –> u-boot –> Linux kernel –> file system –> application  
 ## distinguish between "pass control" and "call"  
 pass control means: the previous program cease to exist
 call means： the following process will return to the previous process
@@ -34,10 +34,14 @@ AMD integrate memory controller into cpu which is used to be external north brid
 ##  U-boot: secondstage bootloader (SSBL)
 # packaging
 DIP : dual in line
+# 寻址方式
+CHS(=LARGE): cylinder header sector(扇区）
+LBA: Logical block address.
+
 # Partition table
 LBA defalt size: 512 bytes   
 GPT disk : disk using GUID partition table  
-MBR: master boot record . stored on the first zone on the disk; fixed size  
+MBR: master boot record . stored on the first zone on the disk; fixed size. 什么样的系统可引导？什么样的不可引导？
 hard disk  
 RAM: volatile: lose everything once power is removed.common type: Double data rate synchrounous dynamic random access memory: DDRSDRAM  
   DRAM: 1970s; Not regulated by clcok; asynchronous;  SDRAM,DDR SDRAM, ECC(error-correcting code) DRAM all belong to DRAM.
