@@ -1,0 +1,5 @@
+Why we use dd instead of copy?
+
+if
+of
+sync: Synchronized output assures that data that is written to a device is actually stored there. Synchronized input assures that data that is read from a device is a current image of data on that device.
