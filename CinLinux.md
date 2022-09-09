@@ -48,4 +48,4 @@ In C, all escape sequences consist of two or more characters, the first of which
 
 ![Screenshot from 2022-07-18 14-36-06](https://user-images.githubusercontent.com/59786755/179456400-e929ecc1-1787-4c72-a90d-b93cef086a88.png)
 When compile escape.c, there is no main funciton though I wrote it in escape.c, whcih can be confirmed in escape.i. The reason is, main() instead of main(void).
-
+# pointer
